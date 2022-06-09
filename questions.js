@@ -608,7 +608,6 @@ const questions = [
     'topic': 'American History',
     'subTopic': 'Recent American History and Other Important Historical Information'
   },
-  
   {
     'id': 88,
     'question': 'Name one of the two longest rivers in the United States.',
