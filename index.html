@@ -20,11 +20,12 @@
     American History
     Integrated Civics
     </p>
+<p>How to fetch: https://american-citizenship-test.herokuapp.com/query-parameter</p>
 
-    <p>Query Parameters</p>
+    <p> Parameters</p>
     <table>
       <tr>
-        <th>Parameter</th>
+        <th>Query Parameter</th>
         <th>Description</th>
       </tr>
       <tr>
@@ -32,12 +33,46 @@
         <td>Returns all 100 questions</td>
       </tr>
       <tr>
-        <td>/api/government</td>
-        <td>Doe</td>
+        <td>/api/random</td>
+        <td>Returns one random question from the whole question bank</td>
       </tr>
+      <tr>
+        <td>/api/government</td>
+        <td>Returns all the questions with the topic "American Government"</td>
+      </tr>
+      <tr>
+        <td>/api/government/random</td>
+        <td>Returns one random question with the topic "American Government"</td>
+      </tr>
+      <tr>
+        <td>/api/history</td>
+        <td>Returns all the questions with the topic "American History"</td>
+      </tr>
+      <tr>
+        <td>/api/history/random</td>
+        <td>Returns one random question with the topic "American History"</td>
+      </tr>
+      <tr>
+        <td>/api/civics</td>
+        <td>Returns all the questions with the topic "Integrated Civics"</td>
+      </tr>
+      <tr>
+        <td>/api/history/random</td>
+        <td>Returns one random question with the topic "Integrated Civics"</td>
+      </tr>
+
     </table>
 
     <p>Example query</p>
-    <p></p>
+    <p>https://american-citizenship-test.herokuapp.com/api/random</p>
+    <p>returns</p>
+    <pre><code>
+        { 
+          "id":88,
+          "question":"Name one of the two longest rivers in the United States.",
+          "answer":"Missouri (River), Mississippi (River)",
+          "topic":"Integrated Civics",
+          "subTopic":"Geography"
+        }</code></pre>
 </body>
 </html>
