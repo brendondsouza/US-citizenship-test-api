@@ -430,18 +430,21 @@ const questions = [
     'id': 62,
     'question': 'Who wrote the Declaration of Independence?',
     'answer': '(Thomas) Jefferson',
+    'topic': 'American History',
     'subTopic': 'Colonial Period and Independence'
   },
   {
     'id': 63,
     'question': 'When was the Declaration of Independence adopted?',
     'answer': 'July 4, 1776',
+    'topic': 'American History',
     'subTopic': 'Colonial Period and Independence'
   },
   {
     'id': 64,
     'question': 'There were 13 original states. Name three.',
     'answer': 'New Hampshire,Massachusetts,Rhode Island,Connecticut,New York,New Jersey,Pennsylvania,Delaware,Maryland,Virginia,North Carolina,South Carolina,Georgia',
+    'topic': 'American History',
     'subTopic': 'Colonial Period and Independence'
   },
   {
