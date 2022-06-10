@@ -232,7 +232,7 @@ const questions = [
   },
   {
     'id': 34,
-    'question': ' Who vetoes bills?',
+    'question': 'Who vetoes bills?',
     'answer': 'the President',
     'topic': 'American Government',
     'subTopic': 'System of Government'
@@ -316,7 +316,7 @@ const questions = [
   },
   {
     'id': 46,
-    'question': ' What is the political party of the President now?',
+    'question': 'What is the political party of the President now?',
     'answer': 'Democratic (Party)',
     'topic': 'American Government',
     'subTopic': 'System of Government'
@@ -463,7 +463,7 @@ const questions = [
   },
   {
     'id': 67,
-    'question': ' The Federalist Papers supported the passage of the U.S. Constitution. Name one of the writers.',
+    'question': 'The Federalist Papers supported the passage of the U.S. Constitution. Name one of the writers.',
     'answer': '(James) Madison, (Alexander) Hamilton, (John) Jay, Publius',
     'topic': 'American History',
     'subTopic': 'Colonial Period and Independence'
@@ -491,7 +491,7 @@ const questions = [
   },
   {
     'id': 71,
-    'question': ' What territory did the United States buy from France in 1803?',
+    'question': 'What territory did the United States buy from France in 1803?',
     'answer': 'the Louisiana Territory, Louisiana',
     'topic': 'American History',
     'subTopic': '1800s'
@@ -694,7 +694,7 @@ const questions = [
   },
   {
     'id': 100,
-    'question': '',
+    'question': 'Name two national U.S. holidays.',
     'answer': 'New Year’s Day, Martin Luther King, Jr. Day, Presidents’ Day, Memorial Day, Independence Day, Labor Day, Columbus Day, Veterans Day, Thanksgiving, Christmas',
     'topic': 'Integrated Civics',
     'subTopic': 'Holidays'

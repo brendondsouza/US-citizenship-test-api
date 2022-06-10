@@ -1,79 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/style.css">
-  <title>U.S. Citizen</title>
-</head>
-<body>
-  <h1>U.S. Citizenship Test Questions and Answers API.</h1>
-
-  <p>The U.S. citizenship exam, which tests an applicant’s knowledge of U.S. history and government, is given orally during the U.S. citizenship interview.
-    
-    The citizenship test consists of 100 questions. The U.S. Citizenship and Immigration Services (USCIS) officer will ask the applicant 10 of the 100 questions, and the applicant must answer 6 out the 10 questions correctly in order to pass the civics test.
-    
-    Below you will find all 100 questions and correct answers for the 2008 version of the civics test.
-    
-    Topics include:
-    American Government
-    American History
-    Integrated Civics
-    </p>
-<p>How to fetch: https://american-citizenship-test.herokuapp.com/query-parameter</p>
-
-    <p> Parameters</p>
-    <table>
-      <tr>
-        <th>Query Parameter</th>
-        <th>Description</th>
-      </tr>
-      <tr>
-        <td>/api</td>
-        <td>Returns all 100 questions</td>
-      </tr>
-      <tr>
-        <td>/api/random</td>
-        <td>Returns one random question from the whole question bank</td>
-      </tr>
-      <tr>
-        <td>/api/government</td>
-        <td>Returns all the questions with the topic "American Government"</td>
-      </tr>
-      <tr>
-        <td>/api/government/random</td>
-        <td>Returns one random question with the topic "American Government"</td>
-      </tr>
-      <tr>
-        <td>/api/history</td>
-        <td>Returns all the questions with the topic "American History"</td>
-      </tr>
-      <tr>
-        <td>/api/history/random</td>
-        <td>Returns one random question with the topic "American History"</td>
-      </tr>
-      <tr>
-        <td>/api/civics</td>
-        <td>Returns all the questions with the topic "Integrated Civics"</td>
-      </tr>
-      <tr>
-        <td>/api/civics/random</td>
-        <td>Returns one random question with the topic "Integrated Civics"</td>
-      </tr>
-
-    </table>
-
-    <p>Example query</p>
-    <p>https://american-citizenship-test.herokuapp.com/api/random</p>
-    <p>returns</p>
-    <pre><code>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>U.S. Citizen</title>
+  </head>
+  <body>
+    <div>
+      <h1>U.S. Citizenship Test Questions and Answers API.</h1>
+      <p>The U.S. citizenship exam, which tests an applicant’s knowledge of U.S. history and government, is given orally during the U.S. citizenship interview. The citizenship test consists of 100 questions. The U.S. Citizenship and Immigration Services (USCIS) officer will ask the applicant 10 of the 100 questions, and the applicant must answer 6 out the 10 questions correctly in order to pass the civics test. Below you will find all 100 questions and correct answers for the 2008 version of the civics test. </br>
+        </br> Topics include:
+      <ul>
+        <li>American Government</li>
+        <li>American History</li>
+        <li>Integrated Civics</li>
+      </ul>
+      </p>
+      <p>How to fetch: https://american-citizenship-test.herokuapp.com/query-parameter</p>
+      <p> Parameters</p>
+      <table>
+        <tr>
+          <th>Query Parameter</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>/api</td>
+          <td>Returns all 100 questions</td>
+        </tr>
+        <tr>
+          <td>/api/random</td>
+          <td>Returns one random question from the whole question bank</td>
+        </tr>
+        <tr>
+          <td>/api/government</td>
+          <td>Returns all the questions with the topic "American Government"</td>
+        </tr>
+        <tr>
+          <td>/api/government/random</td>
+          <td>Returns one random question with the topic "American Government"</td>
+        </tr>
+        <tr>
+          <td>/api/history</td>
+          <td>Returns all the questions with the topic "American History"</td>
+        </tr>
+        <tr>
+          <td>/api/history/random</td>
+          <td>Returns one random question with the topic "American History"</td>
+        </tr>
+        <tr>
+          <td>/api/civics</td>
+          <td>Returns all the questions with the topic "Integrated Civics"</td>
+        </tr>
+        <tr>
+          <td>/api/civics/random</td>
+          <td>Returns one random question with the topic "Integrated Civics"</td>
+        </tr>
+      </table>
+      <div class="query">
+      <p>Example query</p>
+      <p>https://american-citizenship-test.herokuapp.com/api/random</p>
+      <p>returns</p>
+      <pre>
+						<code>
         { 
           "id":88,
           "question":"Name one of the two longest rivers in the United States.",
           "answer":"Missouri (River), Mississippi (River)",
           "topic":"Integrated Civics",
           "subTopic":"Geography"
-        }</code></pre>
-</body>
+        }</code>
+					</pre>
+        </div>
+    </div>
+  </body>
 </html>

@@ -1,0 +1,36 @@
+body{
+  background-image: url('bcg.jpeg');
+  background-size: 110%;
+  background-position: -170px -10px;
+  font-weight: 600;
+  /* color: white */
+}
+
+div{
+ width:50vw;
+ margin: 0 auto;
+ outline: 1px solid black;
+ padding: 0 2vw;
+}
+
+.query{
+  width: 32vw;
+  margin: 0 auto;
+}
+
+h1{
+  text-align: center;
+}
+
+table{
+  margin: 0 auto;
+  /* border: 2px solid black; */
+}
+
+table *{
+  border: 2px solid black;
+}
+
+/* td{
+  border:  2px solid black;
+} */
