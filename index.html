@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>U.S. Citizen</title>
   </head>
   <body>
-    <div>
-      <h1>U.S. Citizenship Test Questions and Answers API.</h1>
-      <p>The U.S. citizenship exam, which tests an applicant’s knowledge of U.S. history and government, is given orally during the U.S. citizenship interview. The citizenship test consists of 100 questions. The U.S. Citizenship and Immigration Services (USCIS) officer will ask the applicant 10 of the 100 questions, and the applicant must answer 6 out the 10 questions correctly in order to pass the civics test. Below you will find all 100 questions and correct answers for the 2008 version of the civics test. </br>
+    <div class="main">
+      <h1>U.S. Citizenship Test</h1>
+      <h2>Questions and Answers API</h2>
+      <p>The U.S. citizenship exam, which tests an applicant’s knowledge of U.S. history and government, is given orally during the U.S. citizenship interview. The citizenship test consists of 100 questions. The U.S. Citizenship and Immigration Services (USCIS) officer will ask the applicant 10 of the 100 questions, and the applicant must answer 6 out the 10 questions correctly in order to pass the civics test. </br>
+        Below you will find all 100 questions and correct answers for the 2008 version of the civics test. </br>
         </br> Topics include:
       <ul>
         <li>American Government</li>
@@ -18,7 +20,7 @@
         <li>Integrated Civics</li>
       </ul>
       </p>
-      <p>How to fetch: https://american-citizenship-test.herokuapp.com/query-parameter</p>
+      <p>Base URL: https://american-citizenship-test.herokuapp.com/api/query-parameter</p>
       <p> Parameters</p>
       <table>
         <tr>
@@ -26,35 +28,31 @@
           <th>Description</th>
         </tr>
         <tr>
-          <td>/api</td>
-          <td>Returns all 100 questions</td>
-        </tr>
-        <tr>
-          <td>/api/random</td>
+          <td>/random</td>
           <td>Returns one random question from the whole question bank</td>
         </tr>
         <tr>
-          <td>/api/government</td>
+          <td>/government</td>
           <td>Returns all the questions with the topic "American Government"</td>
         </tr>
         <tr>
-          <td>/api/government/random</td>
+          <td>/government/random</td>
           <td>Returns one random question with the topic "American Government"</td>
         </tr>
         <tr>
-          <td>/api/history</td>
+          <td>/history</td>
           <td>Returns all the questions with the topic "American History"</td>
         </tr>
         <tr>
-          <td>/api/history/random</td>
+          <td>/history/random</td>
           <td>Returns one random question with the topic "American History"</td>
         </tr>
         <tr>
-          <td>/api/civics</td>
+          <td>/civics</td>
           <td>Returns all the questions with the topic "Integrated Civics"</td>
         </tr>
         <tr>
-          <td>/api/civics/random</td>
+          <td>/civics/random</td>
           <td>Returns one random question with the topic "Integrated Civics"</td>
         </tr>
       </table>

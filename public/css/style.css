@@ -1,16 +1,21 @@
 body{
+
   background-image: url('bcg.jpeg');
-  background-size: 110%;
-  background-position: -170px -10px;
+  background-size: cover;
+  /* background-position: -170px -10px; */
   font-weight: 600;
+  
   /* color: white */
 }
 
-div{
- width:50vw;
- margin: 0 auto;
- outline: 1px solid black;
- padding: 0 2vw;
+.main{
+  text-align: center;
+  width:50vw;
+  margin: 0 auto;
+  outline: 1px solid black;
+  padding: 1rem 2vw;
+  background-color: rgba(0, 0, 0, 0.2);
+  /* height: 100%; */
 }
 
 .query{
@@ -18,8 +23,12 @@ div{
   margin: 0 auto;
 }
 
-h1{
+h1, h2{
   text-align: center;
+}
+
+h1{
+  font-size: 4rem;
 }
 
 table{
@@ -29,6 +38,10 @@ table{
 
 table *{
   border: 2px solid black;
+}
+
+code{
+  text-align: left;
 }
 
 /* td{
