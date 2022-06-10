@@ -35,7 +35,7 @@ app.get('/api/history', (req,res) => {
 })
 
 app.get('/api/history/random', (req,res) => {
-  const random = (Math.ceil(Math.random()*12)-1) + 87
+  const random = (Math.ceil(Math.random()*30)-1) + 57
   res.json(questions[random])
 })
 
