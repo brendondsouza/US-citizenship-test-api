@@ -1,0 +1,180 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/******************************************************************************************************* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+*******************************************************************************************************/
+
+/* UNIVERSAL STYLING  */
+* {box-sizing:border-box}
+
+/******************************************************************************************************* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+*******************************************************************************************************/
+
+
+body{
+  background-image: url('bcg.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+  /* background-position: -170px -10px; */
+  font-weight: 600;
+  color: #3e3e3e;
+}
+
+p{
+  margin:0 0 0 0;
+}
+
+.main{
+  display:flex;
+  flex-direction:column;
+  text-align: center;
+  width:55vw;
+  margin: 0 auto;
+  border:1px solid rgba(255, 255, 255, .25);
+  border-radius: 8px;
+  padding: 1rem 2vw;
+  background-color: rgba(255,255,255, 0.3);
+  box-shadow: 0 0 10px 3px rgb(0 0 0 / 30%);
+  gap:20px;
+  margin-top:50px;
+  margin-bottom:50px;
+  padding: 20px 60px 50px 60px;
+}
+
+h1, h2{
+  text-align: center;
+}
+
+h1{
+  font-size: 4rem;
+}
+
+h2 {
+  font-size:2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.questionsAndAnswers {
+  padding-top:20px;
+}
+
+.questionsAndAnswers h2 {
+  margin-top:20px;
+}
+
+.questionsAndAnswers, .topicsInclude, .baseURL, .parameters {
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+table{
+  margin: 0 auto;
+  /* border: 2px solid black; */
+}
+
+table *{
+  border: 2px solid black;
+  padding: 0 10px;
+}
+
+.query{
+  /* width: 32vw; */
+  margin: 0 auto;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:20px;
+}
+
+.exampleURL {
+  padding-top:10px;
+}
+
+.q1 {
+  display:flex;
+  flex-direction:column;
+  gap:5px;
+  margin-top:30px;
+}
+
+.apiExample {
+  display:flex;
+  flex-direction:column;
+  gap:5px;
+  text-align:left;
+  padding-left:10px;
+}
+
+/* td{
+  border:  2px solid black;
+} */
+
+/******************************************************************************************************* 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+*******************************************************************************************************/
+
+/* MEDIA QUERIES */
+
+@media all and (max-width:1440px) {
+  h1 {font-size:3rem} 
+  h2 {font-size:1.2rem}
+  h3 {font-size:0.8rem}
+  .main {width:60vw}
+  .main {padding: 20px 90px 50px 90px}
+ }
+
+@media all and (max-width:1980px) and (min-width: 1441px) {
+  .main {padding: 50px 150px 75px 150px}
+}
