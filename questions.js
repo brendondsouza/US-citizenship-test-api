@@ -3,13 +3,26 @@ const questions = [
     'id': 1,
     'question': 'What is the supreme law of the land?',
     'answer': 'The Constitution',
+    'choices': [
+        'The Supreme Court',
+        'The Bill of Rights',
+        'The Declaration of Independence',
+        'The Constitution'
+    ],
     'topic': 'American Government',
     'subTopic': 'Principles of American Democracy'
   },
   {
     'id': 2,
     'question': 'What does the Constitution do?',
-    'answer': 'sets up the government, defines the government, protects basic rights of Americans',
+    'answer': 'All of the above',
+    'choices': [
+      'Forms the government',
+      'Defines powers of government',
+      'Defines parts of government',
+      'Protects the rights of the people',
+      'All of the above'
+    ],
     'topic': 'American Government',
     'subTopic': 'Principles of American Democracy'
   },
@@ -45,20 +58,39 @@ const questions = [
     'id': 7,
     'question': 'How many amendments does the Constitution have?',
     'answer': 'twenty-seven (27)',
+    'choices': [
+      'ten (10)',
+      'five (5)',
+      'one hundred and 2 (102)',
+      'twentyseven (27)'
+    ],
     'topic': 'American Government',
     'subTopic': 'Principles of American Democracy'
   },
   {
     'id': 8,
     'question': 'What did the Declaration of Independence do?',
-    'answer': 'announced our independence (from Great Britain), declared our independence (from Great Britain), said that the United States is free (from Great Britain)',
+    'answer': 'All of the above',
+    'choices': [
+      'It says America is free from British control',
+      'It says all people are created equal',
+      'It identifies inherent rights',
+      'It identifies individual freedoms',
+      'All of the above'
+    ],
     'topic': 'American Government',
     'subTopic': 'Principles of American Democracy'
   },
   {
     'id': 9,
     'question': 'What are two rights in the Declaration of Independence?',
-    'answer': 'life, liberty, pursuit of happiness',
+    'answer': 'B and C',
+    'choices': [
+      'Voting',
+      'Equality',
+      'Liberty',
+      'B and C'
+    ],
     'topic': 'American Government',
     'subTopic': 'Principles of American Democracy'
   },
@@ -73,6 +105,12 @@ const questions = [
     'id': 11,
     'question': 'What is the economic system in the United States?*',
     'answer': 'capitalist economy, market economy',
+    'choices': [
+      'Capitalism',
+      'Marxist economy',
+      'Socialist economy',
+      'Communist economy'
+    ],
     'topic': 'American Government',
     'subTopic': 'Principles of American Democracy'
   },
@@ -80,6 +118,12 @@ const questions = [
     'id': 12,
     'question': 'What is the “rule of law”?',
     'answer': 'Everyone must follow the law, Leaders must obey the law, Government must obey the law, No one is above the law.',
+    'choices': [
+      'Only Americans who are naturalized citizens must follow the law',
+      'Everyone must follow the law, except government leaders',
+      'Everyone must follow the law, Leaders must obey the law, Government must obey the law, No one is above the law.',
+      'Only Congress is above the law'
+    ],
     'topic': 'American Government',
     'subTopic': 'Principles of American Democracy'
   },
@@ -114,7 +158,13 @@ const questions = [
   {
     'id': 17,
     'question': 'What are the two parts of the U.S. Congress?*',
-    'answer': 'the Senate and House (of Representatives)',
+    'answer': 'B and C',
+    'choices': [
+      'The Courts',
+      'The Senate',
+      'The House of Representatives',
+      'B and C'
+    ],
     'topic': 'American Government',
     'subTopic': 'System of Government'
   },
@@ -122,6 +172,12 @@ const questions = [
     'id': 18,
     'question': 'How many U.S. Senators are there?',
     'answer': 'one hundred (100)',
+    'choices': [
+      'twentyfive (25)',
+      'fortyfive (45)',
+      'four hundred thirtyfive (435)',
+      'one hundred (100)'
+    ],
     'topic': 'American Government',
     'subTopic': 'System of Government'
   },
@@ -129,6 +185,12 @@ const questions = [
     'id': 19,
     'question': 'We elect a U.S. Senator for how many years?',
     'answer': 'six (6)',
+    'choices': [
+      'two (2)',
+      'four (4)',
+      'five (5)',
+      'six (6)'
+    ],
     'topic': 'American Government',
     'subTopic': 'System of Government'
   },
@@ -143,6 +205,12 @@ const questions = [
     'id': 21,
     'question': 'The House of Representatives has how many voting members?',
     'answer': 'four hundred thirty-five (435)',
+    'choices': [
+      'four hundred thirty-five (435)',
+      'one hundred (100)',
+      'two hundred (200)',
+      'fifty (50)'
+    ],
     'topic': 'American Government',
     'subTopic': 'System of Government'
   },
@@ -150,6 +218,12 @@ const questions = [
     'id': 22,
     'question': 'We elect a U.S. Representative for how many years?',
     'answer': 'two (2)',
+    'choices': [
+      'two (2)',
+      'three (3)',
+      'four (4)',
+      'five (5)'
+    ],
     'topic': 'American Government',
     'subTopic': 'System of Government'
   },
@@ -170,7 +244,13 @@ const questions = [
   {
     'id': 25,
     'question': 'Why do some states have more Representatives than other states?',
-    'answer': '(because of) the state’s population, (because) they have more people, (because) some states have more people',
+    'answer': 'Because some states have more people',
+    'choices': [
+      'Because some states are considered better',
+      'Because some states have more people',
+      'Because states can pick how many representatives they want to send to the house',
+      'None of the above'
+    ],
     'topic': 'American Government',
     'subTopic': 'System of Government'
   },
@@ -178,6 +258,12 @@ const questions = [
     'id': 26,
     'question': 'We elect a President for how many years?',
     'answer': 'Four (4)',
+    'choices': [
+      'Two (2)',
+      'Four (4)',
+      'Six (6)',
+      'Eight (8)'
+    ],
     'topic': 'American Government',
     'subTopic': 'System of Government'
   },
@@ -206,6 +292,12 @@ const questions = [
     'id': 30,
     'question': 'If the President can no longer serve, who becomes President?',
     'answer': 'the Vice President',
+    'choices': [
+      'The Vice President',
+      'The Secretary of State',
+      'The Speaker of the House',
+      'A member of Congress'
+    ],
     'topic': 'American Government',
     'subTopic': 'System of Government'
   },
@@ -220,13 +312,25 @@ const questions = [
     'id': 32,
     'question': 'Who is the Commander in Chief of the military?',
     'answer': 'the President',
+    'choices': [
+      'The General',
+      'The Vice President',
+      'The Speaker of the House',
+      'The President'
+    ],
     'topic': 'American Government',
     'subTopic': 'System of Government'
   },
   {
     'id': 33,
     'question': 'Who signs bills to become laws?',
-    'answer': 'tthe President',
+    'answer': 'the President',
+    'choices': [
+      'Member of Congress',
+      'The President',
+      'Supreme Court Justices',
+      'All of the above'
+    ],
     'topic': 'American Government',
     'subTopic': 'System of Government'
   },
@@ -234,6 +338,12 @@ const questions = [
     'id': 34,
     'question': 'Who vetoes bills?',
     'answer': 'the President',
+    'choices': [
+      'A Member of Congress',
+      'the President',
+      'Supreme Court Justices',
+      'All of the above'
+    ],
     'topic': 'American Government',
     'subTopic': 'System of Government'
   },
@@ -254,7 +364,13 @@ const questions = [
   {
     'id': 37,
     'question': 'What does the judicial branch do?',
-    'answer': 'reviews laws, explains laws, resolves disputes (disagreements), decides if a law goes against the Constitution',
+    'answer': 'Reviews laws, explains laws, resolves disputes (disagreements), decides if a law goes against the Constitution',
+    'choices': [
+      'Writes laws',
+      'Only reviews laws',
+      'Only explains laws',
+      'Reviews laws, explains laws, resolves disputes (disagreements), decides if a law goes against the Constitution'
+    ],
     'topic': 'American Government',
     'subTopic': 'System of Government'
   },
@@ -262,6 +378,12 @@ const questions = [
     'id': 38,
     'question': 'What is the highest court in the United States?',
     'answer': 'the Supreme Court',
+    'choices': [
+      'The Cour of Appeals',
+      'The District Court',
+      'The Federal Court',
+      'The Supreme Court'
+    ],
     'topic': 'American Government',
     'subTopic': 'System of Government'
   },
@@ -269,6 +391,12 @@ const questions = [
     'id': 39,
     'question': 'How many justices are on the Supreme Court?',
     'answer': 'nine (9)',
+    'choices': [
+      'five (5)',
+      'seven (7)',
+      'nine (9)',
+      'eleven (11)'
+    ],
     'topic': 'American Government',
     'subTopic': 'System of Government'
   },
@@ -282,7 +410,13 @@ const questions = [
   {
     'id': 41,
     'question': 'Under our Constitution, some powers belong to the federal government. What is one power of the federal government?',
-    'answer': 'to print money, to declare war, to create an army, to make treaties',
+    'answer': 'All of the above',
+    'choices': [
+      'Writes laws',
+      'Declares war',
+      'Makes the federal budget',
+      'All of the above'
+    ],
     'topic': 'American Government',
     'subTopic': 'System of Government'
   },
@@ -331,7 +465,13 @@ const questions = [
   {
     'id': 48,
     'question': 'There are four amendments to the Constitution about who can vote. Describe one of them.?',
-    'answer': 'Citizens eighteen (18) and older (can vote)., You don’t have to pay (a poll tax) to vote., Any citizen can vote. (Women and men can vote.), A male citizen of any race (can vote).',
+    'answer': 'Citizens eighteen and older can vote',
+    'choices': [
+      'Citizens eighteen years and older can vote',
+      'Anyone with a driver\'s license can vote',
+      'Everyone must register to vote',
+      'None of the above'
+    ],
     'topic': 'American Government',
     'subTopic': 'Rights and Responsibilities'
   },
@@ -360,13 +500,25 @@ const questions = [
     'id': 52,
     'question': 'What do we show loyalty to when we say the Pledge of Allegiance?',
     'answer': 'the United States,the flag',
+    'choices': [
+      'The flag',
+      'The President',
+      'The founding fathers',
+      'Our ancestors'
+    ],
     'topic': 'American Government',
     'subTopic': 'Rights and Responsibilities'
   },
   {
     'id': 53,
     'question': 'What is one promise you make when you become a United States citizen?',
-    'answer': 'give up loyalty to other countries, defend the Constitution and laws of the United States, obey the laws of the United States, serve in the U.S. military (if needed), serve (do important work for) the nation (if needed), be loyal to the United States',
+    'answer': 'Obey the laws of the US & Give up loyalty to other countries',
+    'choices': [
+      'Obey the laws of the US',
+      'Give up loyalty to other countries',
+      'Promise to give your inheritance to the country when you die',
+      'Promise to visit the White House'
+    ],
     'topic': 'American Government',
     'subTopic': 'Rights and Responsibilities'
   },
@@ -380,7 +532,13 @@ const questions = [
   {
     'id': 55,
     'question': 'What are two ways that Americans can participate in their democracy?',
-    'answer': 'vote, join a political party, help with a campaign, join a civic group, join a community group, give an elected official your opinion on an issue, call Senators and Representatives, publicly support or oppose an issue or policy, run for office, write to a newspaper',
+    'answer': 'Vote & Run for office (pick two)',
+    'choices': [
+      'Enlist in the military',
+      'Travel abroad',
+      'Vote',
+      'Run for office'
+    ],
     'topic': 'American Government',
     'subTopic': 'Rights and Responsibilities'
   },
@@ -401,7 +559,13 @@ const questions = [
   {
     'id': 58,
     'question': 'What is one reason colonists came to America?',
-    'answer': 'freedom, political liberty, religious freedom, economic opportunity, practice their religion, escape persecution',
+    'answer': 'All of the above',
+    'choices': [
+      'Political liberty',
+      'Religious freedom',
+      'Economic opportunity',
+      'All of the above'
+    ],
     'topic': 'American History',
     'subTopic': 'Colonial Period and Independence'
   },
@@ -409,20 +573,38 @@ const questions = [
     'id': 59,
     'question': 'Who lived in America before the Europeans arrived?',
     'answer': 'American Indians, Native Americans',
+    'choices': [
+      'Native Americans',
+      'Latinos',
+      'Cowboys',
+      'All of the above'
+    ],
     'topic': 'American History',
     'subTopic': 'Colonial Period and Independence'
   },
   {
     'id': 60,
     'question': 'What group of people was taken to America and sold as slaves?',
-    'answer': 'Africans, people from Africa',
+    'answer': 'Africans',
+    'choices': [
+      'Chinese',
+      'Latinos',
+      'Africans',
+      'Indians'
+    ],
     'topic': 'American History',
     'subTopic': 'Colonial Period and Independence'
   },
   {
     'id': 61,
     'question': 'Why did the colonists fight the British?',
-    'answer': 'because of high taxes (taxation without representation),houses (boarding, quartering),self-government',
+    'answer': 'All of the above',
+    'choices': [
+      'Because of high taxes (taxation without representation)',
+      'Because the British army stayed in their houses (boarding, quartering)',
+      'Because they didn\'t have self-government',
+      'All of the above'
+    ],
     'topic': 'American History',
     'subTopic': 'Colonial Period and Independence'
   },
@@ -430,6 +612,12 @@ const questions = [
     'id': 62,
     'question': 'Who wrote the Declaration of Independence?',
     'answer': '(Thomas) Jefferson',
+    'choices': [
+      'George Washington',
+      'James Madison',
+      'John Adams',
+      'Thomas Jefferson'
+    ],
     'topic': 'American History',
     'subTopic': 'Colonial Period and Independence'
   },
@@ -437,13 +625,25 @@ const questions = [
     'id': 63,
     'question': 'When was the Declaration of Independence adopted?',
     'answer': 'July 4, 1776',
+    'choices': [
+      'July 2, 1776',
+      'July 4, 1776',
+      'July 6, 1776',
+      'July 8, 1776'
+    ],
     'topic': 'American History',
     'subTopic': 'Colonial Period and Independence'
   },
   {
     'id': 64,
-    'question': 'There were 13 original states. Name three.',
-    'answer': 'New Hampshire,Massachusetts,Rhode Island,Connecticut,New York,New Jersey,Pennsylvania,Delaware,Maryland,Virginia,North Carolina,South Carolina,Georgia',
+    'question': 'There were 13 original states. Name five.',
+    'answer': 'Massachusetts, Rhode Island, New York, New Jersey, and Delaware',
+    'choices': [
+      'Massachusetts, Rhode Island, New York, New Jersey, and Delaware',
+      'Massachusetts, Rhode Island, Ohio, Pennsylvania, and Delaware',
+      'North Carolina, South Carolina, Ohio, New Jersey, and Delaware',
+      'North Carolina, South Carolina, New Jersy, California, and Delaware'
+    ],
     'topic': 'American History',
     'subTopic': 'Colonial Period and Independence'
   },
@@ -464,14 +664,26 @@ const questions = [
   {
     'id': 67,
     'question': 'The Federalist Papers supported the passage of the U.S. Constitution. Name one of the writers.',
-    'answer': '(James) Madison, (Alexander) Hamilton, (John) Jay, Publius',
+    'answer': 'James Madison',
+    'choices': [
+      'James Madison',
+      'Thomas Jefferson',
+      'George Washington',
+      'All of the above'
+    ],
     'topic': 'American History',
     'subTopic': 'Colonial Period and Independence'
   },
   {
     'id': 68,
     'question': 'What is one thing Benjamin Franklin is famous for?',
-    'answer': 'U.S. diplomat, oldest member of the Constitutional Convention, first Postmaster General of the United States, writer of “Poor Richard’s Almanac”, started the first free libraries',
+    'answer': 'Having started the first free libraries',
+    'choices': [
+      'Declaring war on the South',
+      'Having started the first free libraries',
+      'Being a President',
+      'Inventing the dollar'
+    ],
     'topic': 'American History',
     'subTopic': 'Colonial Period and Independence'
   },
@@ -492,21 +704,39 @@ const questions = [
   {
     'id': 71,
     'question': 'What territory did the United States buy from France in 1803?',
-    'answer': 'the Louisiana Territory, Louisiana',
+    'answer': 'the Louisiana Territory',
+    'choices': [
+      'The New Mexico Territory',
+      'The Nevada Territory',
+      'The Arizona Territory',
+      'The Louisiana Territory'
+    ],
     'topic': 'American History',
     'subTopic': '1800s'
   },
   {
     'id': 72,
     'question': 'Name one war fought by the United States in the 1800s.',
-    'answer': 'War of 1812, Mexican-American War, Civil War, Spanish-American War',
+    'answer': 'Both B and C',
+    'choices': [
+      'World War 1',
+      'Civil War',
+      'Mexican-American War',
+      'Both B and C'
+    ],
     'topic': 'American History',
     'subTopic': '1800s'
   },
   {
     'id': 73,
     'question': 'Name the U.S. war between the North and the South.',
-    'answer': 'the Civil War, the War between the States',
+    'answer': 'the Civil War',
+    'choices': [
+      'The Civil War',
+      'The Union War',
+      'The Confederacy War',
+      'None of the above'
+    ],
     'topic': 'American History',
     'subTopic': '1800s'
   },
@@ -520,14 +750,26 @@ const questions = [
   {
     'id': 75,
     'question': 'What was one important thing that Abraham Lincoln did?*',
-    'answer': 'freed the slaves (Emancipation Proclamation), saved (or preserved) the Union, led the United States during the Civil War',
+    'answer': 'All of the above',
+    'choices': [
+      'Freed the slaves (Emancipation Proclamation)',
+      'Saved (or preserved) the Union',
+      'Led the United States during the Civil War',
+      'All of the above'
+    ],
     'topic': 'American History',
     'subTopic': '1800s'
   },
   {
     'id': 76,
     'question': 'What did the Emancipation Proclamation do?',
-    'answer': 'freed the slaves, freed slaves in the Confederacy, freed slaves in the Confederate states, freed slaves in most Southern states',
+    'answer': 'Freed the slaves',
+    'choices': [
+      'Freed the slaves',
+      'Declared war on the South',
+      'Proclaimed the Union\'s independence from the Confederacy',
+      'All of the above'
+    ],
     'topic': 'American History',
     'subTopic': '1800s'
   },
@@ -541,7 +783,13 @@ const questions = [
   {
     'id': 78,
     'question': 'Name one war fought by the United States in the 1900s.*',
-    'answer': 'World War I, World War II, Korean War, Vietnam War, (Persian) Gulf War',
+    'answer': 'World War 1',
+    'choices': [
+      'The French War',
+      'The Indian War',
+      'World War 1',
+      'All of the above'
+    ],
     'topic': 'American History',
     'subTopic': 'Recent American History and Other Important Historical Information'
   }, 
@@ -555,7 +803,13 @@ const questions = [
   {
     'id': 80,
     'question': 'Who was President during the Great Depression and World War II?',
-    'answer': 'Franklin) Roosevelt',
+    'answer': 'Franklin Roosevelt',
+    'choices': [
+      'Theodore Roosevelt',
+      'Franklin Roosevelt',
+      'Herbert Hoover',
+      'John F. Kennedy'
+    ],
     'topic': 'American History',
     'subTopic': 'Recent American History and Other Important Historical Information'
   },
@@ -577,6 +831,12 @@ const questions = [
     'id': 83,
     'question': 'During the Cold War, what was the main concern of the United States?',
     'answer': 'Communism',
+    'choices': [
+      'Slavery',
+      'Socialism',
+      'Communism',
+      'Civil rights'
+    ],
     'topic': 'American History',
     'subTopic': 'Recent American History and Other Important Historical Information'
   },
@@ -591,6 +851,12 @@ const questions = [
     'id': 85,
     'question': 'What did Martin Luther King, Jr. do?*',
     'answer': 'fought for civil rights, worked for equality for all Americans',
+    'choices': [
+      'First black President',
+      'Opened a university',
+      'Fought for civil rights',
+      'All of the above'
+    ],
     'topic': 'American History',
     'subTopic': 'Recent American History and Other Important Historical Information'
   },
@@ -598,13 +864,25 @@ const questions = [
     'id': 86,
     'question': 'What major event happened on September 11, 2001, in the United States?',
     'answer': 'Terrorists attacked the United States',
+    'choices': [
+      'The US declared war on Syria',
+      'Terrorists attacked the United States',
+      'both a and b',
+      'None of the above'
+    ],
     'topic': 'American History',
     'subTopic': 'Recent American History and Other Important Historical Information'
   },
   {
     'id': 87,
     'question': 'Name one American Indian tribe in the United States.',
-    'answer': 'Cherokee, Navajo, Sioux, Chippewa, Choctaw, Pueblo, Apache, Iroquois, Creek, Blackfeet, Seminole, Cheyenne, Arawak, Shawnee, Mohegan, Huron, Oneida, Lakota, Crow, Teton, Hopi, Inuit',
+    'answer': 'Cherokee',
+    'choices': [
+      'Mayan',
+      'Aztec',
+      'Cherokee',
+      'All of the above'
+    ],
     'topic': 'American History',
     'subTopic': 'Recent American History and Other Important Historical Information'
   },
@@ -654,27 +932,51 @@ const questions = [
     'id': 94,
     'question': 'What is the capital of the United States?*',
     'answer': 'Washington, D.C.',
+    'choices': [
+      'Cleveland, Ohio',
+      'Boston, Massachusetts',
+      'Philadelphia, Pennsylvania',
+      'Washington, D.C.'
+    ],
     'topic': 'Integrated Civics',
     'subTopic': 'Geography'
   },
   {
     'id': 95,
     'question': 'Where is the Statue of Liberty?*',
-    'answer': 'New York (Harbor), Liberty Island, [Also acceptable are New Jersey, near New York City, and on the Hudson (River).]',
+    'answer': 'New York',
+    'choices': [
+      'Washington, D.C.',
+      'Philadelphia',
+      'New York',
+      'Los Angeles'
+    ],
     'topic': 'Integrated Civics',
     'subTopic': 'Geography'
   },
   {
     'id': 96,
     'question': 'Why does the flag have 13 stripes?',
-    'answer': 'because there were 13 original colonies, because the stripes represent the original colonies',
+    'answer': 'because there were 13 original colonies',
+    'choices': [
+      'For the first 13 presidents',
+      'Because there were 13 original colonies',
+      'For 13 wars fought',
+      'For 13 of the top US generals'
+    ],
     'topic': 'Integrated Civics',
     'subTopic': 'Symbols'
   },
   {
     'id': 97,
     'question': 'Why does the flag have 50 stars?*',
-    'answer': 'because there is one star for each state, because each star represents a state, because there are 50 states',
+    'answer': 'Because there are 50 states',
+    'choices': [
+      'For the first 50 presidents',
+      'Because there are 50 states',
+      'For 50 of the top US generals',
+      'For 50 wars fought'
+    ],
     'topic': 'Integrated Civics',
     'subTopic': 'Symbols'
   },
@@ -682,6 +984,12 @@ const questions = [
     'id': 98,
     'question': 'What is the name of the national anthem?',
     'answer': 'The Star-Spangled Banner',
+    'choices': [
+      'The Land of the Free',
+      'The Land',
+      'The Star-Spangled Banner',
+      'The Song of the Forefathers'
+    ],
     'topic': 'Integrated Civics',
     'subTopic': 'Symbols'
   },
@@ -694,8 +1002,14 @@ const questions = [
   },
   {
     'id': 100,
-    'question': 'Name two national U.S. holidays.',
-    'answer': 'New Year’s Day, Martin Luther King, Jr. Day, Presidents’ Day, Memorial Day, Independence Day, Labor Day, Columbus Day, Veterans Day, Thanksgiving, Christmas',
+    'question': 'Name three national U.S. holidays.',
+    'answer': 'Independence Day, Martin Luther King, Jr. Day, and Veterans Day',
+    'choices': [
+        'Independence Day, Martin Luther King, Jr. Day, and Veterans Day',
+        'Caesar Chavez Day, Easter, Christmas',
+        'Mother\'s Day, Father\'s Day, Labor Day',
+        'Civil Rights Day, Declaration of Independence Day, Easter'
+    ],
     'topic': 'Integrated Civics',
     'subTopic': 'Holidays'
   }
