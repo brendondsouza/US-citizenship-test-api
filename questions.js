@@ -226,7 +226,7 @@ const questions = [
   {
     'id': 33,
     'question': 'Who signs bills to become laws?',
-    'answer': 'tthe President',
+    'answer': 'the President',
     'topic': 'American Government',
     'subTopic': 'System of Government'
   },
