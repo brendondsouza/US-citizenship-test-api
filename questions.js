@@ -295,7 +295,7 @@ const questions = [
   },
   {
     'id': 43,
-    'question': 'Who is the Chief Justice of the United States now?',
+    'question': 'Who is the Governor of your state right now?',
     'answer': 'Answers will vary. [District of Columbia residents should answer that D.C. does not have a Governor.]',
     'topic': 'American Government',
     'subTopic': 'System of Government'
