@@ -4,6 +4,9 @@ U.S. Citizenship Test Questions and Answers API.
 
 Live site: https://american-citizenship-test.herokuapp.com/
 
+
+![FWN3wPrX0AMWDfB](https://user-images.githubusercontent.com/101214978/177057652-c6cd5942-b8b0-4d51-948b-a84079286ee0.jpeg)
+
 The U.S. citizenship exam, which tests an applicant’s knowledge of U.S. history and government, is given orally during the U.S. citizenship interview. The citizenship test consists of 100 questions. The U.S. Citizenship and Immigration Services (USCIS) officer will ask the applicant 10 of the 100 questions, and the applicant must answer 6 out the 10 questions correctly in order to pass the civics test. Below you will find all 100 questions and correct answers for the 2008 version of the civics test. Topics include: American Government American History Integrated Civics
 
 How to fetch: https://american-citizenship-test.herokuapp.com/query-parameter
