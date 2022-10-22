@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="shortcut icon" href="/css/favicon.ico" />
+  <title>U.S. Citizen</title>
+</head>
+
+<body>
+  <div class="main">
+    <section class="questionsAndAnswers">
+      <h1>U.S. Citizenship Test</h1>
+      <h2>Questions and Answers API</h2>
+      <p>The U.S. citizenship exam, which tests an applicant’s knowledge of U.S. history and government, is given orally
+        during the U.S. citizenship interview. The citizenship test consists of 100 questions. The U.S. Citizenship and
+        Immigration Services (USCIS) officer will ask the applicant 10 of the 100 questions, and the applicant must
+        answer 6 out the 10 questions correctly in order to pass the civics test. </p>
+      <p>This API consists of all the 100 questions and correct answers for the 2008 version of the civics test.</p>
+    </section>
+
+    <section class="topicsInclude">
+      <h3>Topics include:</h3>
+      <p>American Government</p>
+      <p>American History</p>
+      <p>Integrated Civics</p>
+    </section>
+
+    <section class="baseURL">
+      <h3>HTTP Request</h3>
+      <p>GET https://american-citizenship-test.herokuapp.com/api/query-parameter</p>
+    </section>
+
+    <section class="parameters">
+      <h3> Parameters</h3>
+      <table>
+        <tr>
+          <th>Query Parameter</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>/random</td>
+          <td>Returns one random question from the whole question bank</td>
+        </tr>
+        <tr>
+          <td>/government</td>
+          <td>Returns all the questions with the topic "American Government"</td>
+        </tr>
+        <tr>
+          <td>/government/random</td>
+          <td>Returns one random question with the topic "American Government"</td>
+        </tr>
+        <tr>
+          <td>/history</td>
+          <td>Returns all the questions with the topic "American History"</ td>
+        </tr>
+        <tr>
+          <td>/history/random</td>
+          <td>Returns one random question with the topic "American History"</ td>
+        </tr>
+        <tr>
+          <td>/civics</td>
+          <td>Returns all the questions with the topic "Integrated Civics"</ td>
+        </tr>
+        <tr>
+          <td>/civics/random</td>
+          <td>Returns one random question with the topic "Integrated Civics"</td>
+        </tr>
+      </table>
+    </section>
+
+
+    <section class="query">
+      <section class="exampleQuery">
+        <h3>Example request</h3>
+        <p class="exampleURL">https://american-citizenship-test.herokuapp.com/api/random</p> </br>
+        <p>After making that request, you will get a response much like the following:</p>
+      </section>
+
+      <section class="apiExample">
+        <p>{ </p>
+        <p> 'id': 1, </p>
+        <p> 'question': 'What is the supreme law of the land?', </p>
+        <p> 'answer': 'The Constitution', </p>
+        <p> 'topic': 'American Government', </p>
+        <p> 'subTopic': 'Principles of American Democracy'</p>
+        <p>} </p>
+      </section>
+    </section>
+
+  </div>
+</body>
+
+</html>
