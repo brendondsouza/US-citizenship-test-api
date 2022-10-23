@@ -16,16 +16,15 @@
       <h1>U.S. Citizenship Test</h1>
     </section>
 
-    <ul>
-      <% questions.forEach( el=> { %>
-            <li class='' data-id='<%=el._id%>'>
-                <span <%= el.question %></span>
-                <span <%= el.answer %></span>
-                <span <%= el.topic %></span>
-                <span <%= el.subTopic %></span>
-            </li>
-        <% }) %>    
-        </ul>
+
+    <ul class="row list-unstyled">
+      <% for(let i=0; i<questions.length; i++) {%>
+              <span><%= questions[i].question %></span>
+              <span><%= questions[i].answer %></span>
+              <span><%= questions[i].topic %></span>
+              <span><%= questions[i].subTopic %></span>
+            <% } %>
+            </ul>
 
         
 
