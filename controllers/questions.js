@@ -62,7 +62,7 @@ module.exports = {
 },
 getCivicsRandom: async (req, res)=>{
     try{
-        const questions = await Question.find({topic: "Integrated Civics"})
+        const questions = await Question.find()
         const random = (Math.ceil(Math.random()*12)-1) + 87
         res.render('questions.ejs', {questions: questions[random]})
         
