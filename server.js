@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const connectDB = require('./config/database')
 const homeRoutes = require('./routes/home')
-const apiRoutes = require('./routes/questions')
+const apiRoutes = require('./routes/api')
 
 require('dotenv').config({path: './config/.env'})
 
