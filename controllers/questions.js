@@ -4,7 +4,7 @@ module.exports = {
   getApi: async (req,res)=>{
         try{
             const questions = await Question.find()
-            console.log(questions)
+            console.log(questions.length)
             res.render('questions.ejs', {questions: questions})
         }catch(err){
             console.log(err)
@@ -12,10 +12,10 @@ module.exports = {
     },
     getApiRandom: async (req, res)=>{
         try{
-            const questions = await Question.findOne()
-            //const random = Math.ceil(Math.random()*100)-1
-            console.log(questions)
-            res.render('questions.ejs', {questions: questions})
+            const questions = await Question.find()
+            const random = Math.ceil(Math.random()*100)-1
+            console.log(questions.length)
+            res.render('questions.ejs', {questions: questions[random]})
         }catch(err){
             console.log(err)
         }
@@ -23,7 +23,7 @@ module.exports = {
     getGovernment: async (req, res)=>{
         try{
             const questions = await Question.find({topic:"American Government"})
-            console.log(questions)
+            console.log(questions.length)
             res.render('questions.ejs', {questions: questions})
         }catch(err){
             console.log(err)
@@ -31,9 +31,9 @@ module.exports = {
     },
     getGovernmentRandom: async (req, res)=>{
         try{
-            const questions = await Question.findOne({topic:"American Government"})
-            console.log(questions)
-            const random = Math.ceil(Math.random()*57)-1
+            const questions = await Question.find({topic:"American Government"})
+            console.log(questions.length)
+            const random = Math.ceil(Math.random()* questions.length) - 1
             res.render('questions.ejs', {questions: questions[random]})
         }catch(err){
             console.log(err)
@@ -42,6 +42,7 @@ module.exports = {
     getHistory: async (req, res)=>{
       try{
         const questions = await Question.find({topic:"American History"})
+        console.log(questions.length)
         res.render('questions.ejs', {questions: questions})
       }catch(err){
           console.log(err)
@@ -50,7 +51,8 @@ module.exports = {
   getHistoryRandom: async (req, res)=>{
       try{
         const questions = await Question.find({topic:"American History"})
-        const random = (Math.ceil(Math.random()*30)-1) + 57
+        const random = Math.ceil(Math.random()* questions.length) - 1
+        console.log(questions.length)
         res.render('questions.ejs', {questions: questions[random]})
       }catch(err){
           console.log(err)
@@ -59,6 +61,7 @@ module.exports = {
   getCivics: async (req, res)=>{
     try{
         const questions = await Question.find({topic:"Integrated Civics"})
+        console.log(questions.length)
         res.render('questions.ejs', {questions: questions})
     }catch(err){
         console.log(err)
@@ -67,7 +70,8 @@ module.exports = {
 getCivicsRandom: async (req, res)=>{
     try{
         const questions = await Question.find()
-        const random = (Math.ceil(Math.random()*12)-1) + 87
+        const random = Math.ceil(Math.random()* questions.length) - 1
+        console.log(questions.length)
         res.render('questions.ejs', {questions: questions[random]})
         
     }catch(err){

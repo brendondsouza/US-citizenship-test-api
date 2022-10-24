@@ -16,15 +16,32 @@
       <h1>U.S. Citizenship Test</h1>
     </section>
 
+    <% if (Array.isArray(questions)) { %>
+      <ul class="row list-unstyled">
+        <% for(let i=0; i<questions.length; i++) {%>
+                <li><%= i + 1 %> Question: <%= questions[i].question %></li>
+                <li>Answer: <%= questions[i].answer %></li>
+                <li>Topic: <%= questions[i].topic %></li>
+                <li>Sub-topic: <%= questions[i].subTopic %></li>
+              <% } %>
+              </ul>
+      <%} else { %>
+        <ul class="row list-unstyled">
+                  <li>Question: <%= questions.question %></li>
+                  <li>Answer: <%= questions.answer %></li>
+                  <li>Topic: <%= questions.topic %></li>
+                  <li>Sub-topic: <%= questions.subTopic %></li>
+                </ul>
+      <% } %>
 
-    <ul class="row list-unstyled">
+    <!-- <ul class="row list-unstyled">
       <% for(let i=0; i<questions.length; i++) {%>
               <span><%= questions[i].question %></span>
               <span><%= questions[i].answer %></span>
               <span><%= questions[i].topic %></span>
               <span><%= questions[i].subTopic %></span>
             <% } %>
-            </ul>
+            </ul> -->
 
         
 

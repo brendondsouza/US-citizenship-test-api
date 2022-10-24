@@ -12,7 +12,7 @@ router.get('/government/random', questionsController.getGovernmentRandom)
 
 router.get('/history', questionsController.getHistory)
 
-router.get('/api/history/random', questionsController.getHistoryRandom)
+router.get('/history/random', questionsController.getHistoryRandom)
 
 router.get('/civics', questionsController.getCivics)
 
