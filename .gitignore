@@ -1,2 +1,6 @@
 node_modules
 data.js
+.env
+server-old.js
+index.html
+questions.js

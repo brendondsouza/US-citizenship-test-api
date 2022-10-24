@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="shortcut icon" href="/css/favicon.ico" />
+  <title>U.S. Citizen</title>
+</head>
+
+<body>
+  <div class="main">
+    <section class="questionsAndAnswers">
+      <h1>U.S. Citizenship Test</h1>
+    </section>
+
+    <% if (Array.isArray(questions)) { %>
+      <ul class="row list-unstyled">
+        <% for(let i=0; i<questions.length; i++) {%>
+                <li><%= i + 1 %>) Question: <%= questions[i].question %></li>
+                <li>Answer: <%= questions[i].answer %></li>
+                <li>Topic: <%= questions[i].topic %></li>
+                <li>Sub-topic: <%= questions[i].subTopic %></li>
+                </br>
+
+              <% } %>
+              </ul>
+      <%} else { %>
+        <ul class="row list-unstyled">
+                  <li>Question: <%= questions.question %></li>
+                  <li>Answer: <%= questions.answer %></li>
+                  <li>Topic: <%= questions.topic %></li>
+                  <li>Sub-topic: <%= questions.subTopic -%></li>
+                </ul>
+      <% } %>
+
+    <!-- <ul class="row list-unstyled">
+      <% for(let i=0; i<questions.length; i++) {%>
+              <span><%= questions[i].question %></span>
+              <span><%= questions[i].answer %></span>
+              <span><%= questions[i].topic %></span>
+              <span><%= questions[i].subTopic %></span>
+            <% } %>
+            </ul> -->
+
+        
+
+
+    </div>
+  </body>
+</html>
