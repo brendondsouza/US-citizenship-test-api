@@ -1,13 +1,10 @@
 const Question = require('../models/Question')
 
 module.exports = {
-  getIndex: (req,res)=>{
-      res.render('index.ejs')
-  },
   getApi: async (req,res)=>{
         try{
             const questions = await Question.find()
-            res.render('questions.ejs', {questions: questions})
+            res.json(questions)
         }catch(err){
             console.log(err)
         }
@@ -16,7 +13,7 @@ module.exports = {
         try{
             const questions = await Question.find()
             const random = Math.ceil(Math.random()*100)-1
-            res.render('questions.ejs', {questions: questions[random]})
+            res.json(questions[random])
         }catch(err){
             console.log(err)
         }
@@ -24,7 +21,7 @@ module.exports = {
     getGovernment: async (req, res)=>{
         try{
             const questions = await Question.find({topic:"American Government"})
-            res.render('questions.ejs', {questions: questions})
+            res.json(questions)
         }catch(err){
             console.log(err)
         }
@@ -33,7 +30,7 @@ module.exports = {
         try{
             const questions = await Question.find({topic:"American Government"})
             const random = Math.ceil(Math.random()* questions.length) - 1
-            res.render('questions.ejs', {questions: questions[random]})
+            res.json(questions[random])
         }catch(err){
             console.log(err)
         }
@@ -41,7 +38,7 @@ module.exports = {
     getHistory: async (req, res)=>{
       try{
         const questions = await Question.find({topic:"American History"})
-        res.render('questions.ejs', {questions: questions})
+        res.json(questions)
       }catch(err){
           console.log(err)
       }
@@ -50,7 +47,7 @@ module.exports = {
       try{
         const questions = await Question.find({topic:"American History"})
         const random = Math.ceil(Math.random()* questions.length) - 1
-        res.render('questions.ejs', {questions: questions[random]})
+        res.json(questions[random])
       }catch(err){
           console.log(err)
       }
@@ -58,16 +55,16 @@ module.exports = {
   getCivics: async (req, res)=>{
     try{
         const questions = await Question.find({topic:"Integrated Civics"})
-        res.render('questions.ejs', {questions: questions})
+        res.json(questions)
     }catch(err){
         console.log(err)
     }
 },
 getCivicsRandom: async (req, res)=>{
     try{
-        const questions = await Question.find()
+        const questions = await Question.find({topic:"Integrated Civics"})
         const random = Math.ceil(Math.random()* questions.length) - 1
-        res.render('questions.ejs', {questions: questions[random]})
+        res.json(questions[random])
         
     }catch(err){
         console.log(err)
