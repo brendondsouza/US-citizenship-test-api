@@ -8,7 +8,7 @@ This project is very dear to me as this is an immigration system that I have gon
 
 ## How It's Made:
 
-**Tech used:** Node, Express, JavaScript, HTML, CSS, APIs
+**Tech used:** Node, Express, MongoDB, EJS, JavaScript, HTML, CSS, APIs
 
 The U.S. citizenship test, which tests an applicant’s knowledge of U.S. history and government, is given orally during the U.S. citizenship interview. The citizenship test consists of 100 questions. The U.S. Citizenship and Immigration Services (USCIS) officer will ask the applicant 10 of the 100 questions, and the applicant must answer 6 out the 10 questions correctly in order to pass the civics test. 
 
@@ -17,6 +17,13 @@ The purpose of this API is to provide the questions and answers to the United St
 ## Lessons Learned:
 - Implementing a full stack application by building an API on the backend and a landing page with the documentation on the front end.
 - Using the CORS package to prevent CORS errors when users consume the API.
+
+Further learnings on converting the project architecture to MVC-
+- How to convert a legacy codebase to a newer architecture
+- How to move data from js files to a MongoDb database
+- How to pull data from a database via the model and serve it to the views using the controller
+- How to work with ejs to render data dynaimcally on the front end
+- EJS syntax and expressions
 
 ## Optimizations
 
